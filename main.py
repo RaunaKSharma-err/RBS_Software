@@ -24,7 +24,7 @@ customer_details_frames = LabelFrame(
     bd=8,
     relief="groove",
 )
-customer_details_frames.pack(fill=X)
+customer_details_frames.pack(fill=X, pady=5)
 
 name_label = Label(
     customer_details_frames,
@@ -68,16 +68,17 @@ Bill_entry.grid(row=0, column=5, pady=10, padx=15)
 Search_Button = Button(
     customer_details_frames,
     text="Search",
-    font=("times new roman", 15, "bold"),
+    font=("times new roman", 13, "bold"),
     bd=5,
     width=15,
 )
-Search_Button.grid(row=0, column=6, pady=10, padx=20)
+Search_Button.grid(row=0, column=6, pady=5, padx=20)
 
 productFrame = Frame(root)
 productFrame.pack()
 
 cosmetics_product_frames = LabelFrame(
+    productFrame,
     text="Cosmetics",
     font=("times new roman", 15, "bold"),
     bd=8,
@@ -86,7 +87,7 @@ cosmetics_product_frames = LabelFrame(
     relief=GROOVE,
     width=20,
 )
-cosmetics_product_frames.grid(row=0, column=0)
+cosmetics_product_frames.grid(row=0, column=0, padx=5)
 
 bath_soap = Label(
     cosmetics_product_frames,
@@ -175,7 +176,8 @@ body_lotion_entry.grid(row=5, column=1)
 # grocery customer_details_frames
 
 grocery_frames = LabelFrame(
-    text="Cosmetics",
+    productFrame,
+    text="Grocery",
     font=("times new roman", 15, "bold"),
     bd=8,
     bg="gray20",
@@ -185,89 +187,202 @@ grocery_frames = LabelFrame(
 )
 grocery_frames.grid(row=0, column=1)
 
-bath_soap = Label(
+rice = Label(
     grocery_frames,
-    text="Bath Soap",
+    text="Rice",
     font=("times new roman", 14),
     fg="white",
     bg="gray20",
     pady=10,
     padx=20,
 )
-bath_soap.grid(row=0, column=0)
+rice.grid(row=0, column=0)
 
-bath_soap_entry = Entry(grocery_frames, font=("arial", 15), width=8, bd=5)
-bath_soap_entry.grid(row=0, column=1, padx=20)
+rice_entry = Entry(grocery_frames, font=("arial", 15), width=8, bd=5)
+rice_entry.grid(row=0, column=1, padx=20)
 
-face_cream = Label(
+oil = Label(
     grocery_frames,
-    text="Face Cream",
+    text="Oil",
     font=("times new roman", 14),
     fg="white",
     bg="gray20",
     pady=10,
     padx=20,
 )
-face_cream.grid(row=1, column=0)
+oil.grid(row=1, column=0)
 
-face_cream_entry = Entry(grocery_frames, font=("arial", 15), width=8, bd=5)
-face_cream_entry.grid(row=1, column=1)
+oil_entry = Entry(grocery_frames, font=("arial", 15), width=8, bd=5)
+oil_entry.grid(row=1, column=1)
 
-face_wash = Label(
+Daal = Label(
     grocery_frames,
-    text="Face Wash",
+    text="Daal",
     font=("times new roman", 14),
     fg="white",
     bg="gray20",
     pady=10,
     padx=20,
 )
-face_wash.grid(row=2, column=0)
+Daal.grid(row=2, column=0)
 
-face_wash_entry = Entry(grocery_frames, font=("arial", 15), width=8, bd=5)
-face_wash_entry.grid(row=2, column=1)
+Daal_entry = Entry(grocery_frames, font=("arial", 15), width=8, bd=5)
+Daal_entry.grid(row=2, column=1)
 
-hair_spray = Label(
+Wheat = Label(
     grocery_frames,
-    text="Hair Spray",
+    text="Wheat",
     font=("times new roman", 14),
     fg="white",
     bg="gray20",
     pady=10,
     padx=20,
 )
-hair_spray.grid(row=3, column=0)
+Wheat.grid(row=3, column=0)
 
-hair_spray_entry = Entry(grocery_frames, font=("arial", 15), width=8, bd=5)
-hair_spray_entry.grid(row=3, column=1)
+Wheat_entry = Entry(grocery_frames, font=("arial", 15), width=8, bd=5)
+Wheat_entry.grid(row=3, column=1)
 
-Hair_gel = Label(
+Sugar = Label(
     grocery_frames,
-    text="Hair Gel",
+    text="Sugar",
     font=("times new roman", 14),
     fg="white",
     bg="gray20",
     pady=10,
     padx=20,
 )
-Hair_gel.grid(row=4, column=0)
+Sugar.grid(row=4, column=0)
 
-Hair_gel_entry = Entry(grocery_frames, font=("arial", 15), width=8, bd=5)
-Hair_gel_entry.grid(row=4, column=1)
+Sugar_entry = Entry(grocery_frames, font=("arial", 15), width=8, bd=5)
+Sugar_entry.grid(row=4, column=1)
 
-body_lotion = Label(
+Tea = Label(
     grocery_frames,
-    text="Body Lotion",
+    text="Tea",
     font=("times new roman", 14),
     fg="white",
     bg="gray20",
     pady=10,
     padx=20,
 )
-body_lotion.grid(row=5, column=0)
+Tea.grid(row=5, column=0)
 
-body_lotion_entry = Entry(grocery_frames, font=("arial", 15), width=8, bd=5)
-body_lotion_entry.grid(row=5, column=1)
+Tea_entry = Entry(grocery_frames, font=("arial", 15), width=8, bd=5)
+Tea_entry.grid(row=5, column=1)
+
+# Cold drinks frames
+
+grocery_frames = LabelFrame(
+    productFrame,
+    text="Cold Drinks",
+    font=("times new roman", 15, "bold"),
+    bd=8,
+    bg="gray20",
+    fg="gold",
+    relief=GROOVE,
+    width=20,
+)
+grocery_frames.grid(row=0, column=2, padx=5)
+
+Mazza = Label(
+    grocery_frames,
+    text="Mazza",
+    font=("times new roman", 14),
+    fg="white",
+    bg="gray20",
+    pady=10,
+    padx=20,
+)
+Mazza.grid(row=0, column=0)
+
+Mazza_entry = Entry(grocery_frames, font=("arial", 15), width=8, bd=5)
+Mazza_entry.grid(row=0, column=1, padx=20)
+
+Pepsi = Label(
+    grocery_frames,
+    text="Pepsi",
+    font=("times new roman", 14),
+    fg="white",
+    bg="gray20",
+    pady=10,
+    padx=20,
+)
+Pepsi.grid(row=1, column=0)
+
+Pepsi_entry = Entry(grocery_frames, font=("arial", 15), width=8, bd=5)
+Pepsi_entry.grid(row=1, column=1)
+
+Sprite = Label(
+    grocery_frames,
+    text="Sprite",
+    font=("times new roman", 14),
+    fg="white",
+    bg="gray20",
+    pady=10,
+    padx=20,
+)
+Sprite.grid(row=2, column=0)
+
+Sprite_entry = Entry(grocery_frames, font=("arial", 15), width=8, bd=5)
+Sprite_entry.grid(row=2, column=1)
+
+Dew = Label(
+    grocery_frames,
+    text="Dew",
+    font=("times new roman", 14),
+    fg="white",
+    bg="gray20",
+    pady=10,
+    padx=20,
+)
+Dew.grid(row=3, column=0)
+
+Dew_entry = Entry(grocery_frames, font=("arial", 15), width=8, bd=5)
+Dew_entry.grid(row=3, column=1)
+
+Frooti = Label(
+    grocery_frames,
+    text="Frooti",
+    font=("times new roman", 14),
+    fg="white",
+    bg="gray20",
+    pady=10,
+    padx=20,
+)
+Frooti.grid(row=4, column=0)
+
+Frooti_entry = Entry(grocery_frames, font=("arial", 15), width=8, bd=5)
+Frooti_entry.grid(row=4, column=1)
+
+CocaCola = Label(
+    grocery_frames,
+    text="Coca Cola",
+    font=("times new roman", 14),
+    fg="white",
+    bg="gray20",
+    pady=10,
+    padx=20,
+)
+CocaCola.grid(row=5, column=0)
+
+CocaCola_entry = Entry(grocery_frames, font=("arial", 15), width=8, bd=5)
+CocaCola_entry.grid(row=5, column=1)
+
+BillFrame = Frame(productFrame, bd=8, relief=GROOVE)
+BillFrame.grid(row=0, column=3)
+
+Bill_label = Label(
+    BillFrame, text="Bill", font=("times new roman", 15, "bold"), relief=GROOVE, padx=5
+)
+Bill_label.pack(fill=X)
+
+scrollbar = Scrollbar(BillFrame, orient=VERTICAL)
+scrollbar.pack(side=RIGHT, fill=Y)
+
+textarea = Text(BillFrame, width=49, height=16, yscrollcommand=scrollbar.set)
+textarea.pack()
+scrollbar.config(command=textarea.yview)
 
 
 root.mainloop()
