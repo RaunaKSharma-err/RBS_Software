@@ -384,5 +384,111 @@ textarea = Text(BillFrame, width=49, height=16, yscrollcommand=scrollbar.set)
 textarea.pack()
 scrollbar.config(command=textarea.yview)
 
+#    Bill Menu     ------------------------
+
+Bill_Menu_frames = LabelFrame(
+    root,
+    text="BillMenu",
+    font=("times new roman", 15, "bold"),
+    bd=8,
+    bg="gray20",
+    fg="gold",
+    relief=GROOVE,
+    width=20,
+)
+Bill_Menu_frames.pack(fill=X, pady=5)
+
+Cosmetic_Price = Label(
+    Bill_Menu_frames,
+    text="Cosmetic Price",
+    font=("times new roman", 14),
+    fg="white",
+    bg="gray20",
+    pady=10,
+    padx=20,
+)
+Cosmetic_Price.grid(row=0, column=0)
+
+Cosmetic_Price_entry = Entry(Bill_Menu_frames, font=("arial", 15), width=8, bd=5)
+Cosmetic_Price_entry.grid(row=0, column=1, padx=20)
+
+Grocery_Price = Label(
+    Bill_Menu_frames,
+    text="Grocery Price",
+    font=("times new roman", 14),
+    fg="white",
+    bg="gray20",
+    pady=10,
+)
+Grocery_Price.grid(row=1, column=0)
+
+Grocery_Price_entry = Entry(Bill_Menu_frames, font=("arial", 15), width=8, bd=5)
+Grocery_Price_entry.grid(row=1, column=1)
+
+Cold_Drink_Price = Label(
+    Bill_Menu_frames,
+    text="Cold Drink Price",
+    font=("times new roman", 14),
+    fg="white",
+    bg="gray20",
+    pady=10,
+)
+Cold_Drink_Price.grid(row=2, column=0)
+
+Cold_Drink_entry = Entry(Bill_Menu_frames, font=("arial", 15), width=8, bd=5)
+Cold_Drink_entry.grid(row=2, column=1)
+
+Cold_Drink = Label(
+    Bill_Menu_frames,
+    text="Grocery Price",
+    font=("times new roman", 14),
+    fg="white",
+    bg="gray20",
+    pady=10,
+)
+Grocery_Price.grid(row=1, column=0)
+
+Grocery_Price_entry = Entry(Bill_Menu_frames, font=("arial", 15), width=8, bd=5)
+Grocery_Price_entry.grid(row=1, column=1)
+
+Grocery_Price = Label(
+    Bill_Menu_frames,
+    text="Grocery Price",
+    font=("times new roman", 14),
+    fg="white",
+    bg="gray20",
+    pady=10,
+)
+Grocery_Price.grid(row=1, column=0)
+
+Grocery_Price_entry = Entry(Bill_Menu_frames, font=("arial", 15), width=8, bd=5)
+Grocery_Price_entry.grid(row=1, column=1)
+
+Grocery_Price = Label(
+    Bill_Menu_frames,
+    text="Grocery Price",
+    font=("times new roman", 14),
+    fg="white",
+    bg="gray20",
+    pady=10,
+)
+Grocery_Price.grid(row=1, column=0)
+
+Grocery_Price_entry = Entry(Bill_Menu_frames, font=("arial", 15), width=8, bd=5)
+Grocery_Price_entry.grid(row=1, column=1)
+
+Grocery_Price = Label(
+    Bill_Menu_frames,
+    text="Grocery Price",
+    font=("times new roman", 14),
+    fg="white",
+    bg="gray20",
+    pady=10,
+    padx=20,
+)
+Grocery_Price.grid(row=1, column=0)
+
+Grocery_Price_entry = Entry(Bill_Menu_frames, font=("arial", 15), width=8, bd=5)
+Grocery_Price_entry.grid(row=1, column=1)
 
 root.mainloop()
