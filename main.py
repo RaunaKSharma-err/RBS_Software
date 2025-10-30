@@ -2,7 +2,7 @@ from tkinter import *
 
 root = Tk()
 root.title("Retail Billing System")
-root.geometry("1270x685")
+root.geometry("1270x686")
 root.iconbitmap("icon.ico")
 headingLabel = Label(
     root,
@@ -101,7 +101,7 @@ bath_soap = Label(
 bath_soap.grid(row=0, column=0)
 
 bath_soap_entry = Entry(cosmetics_product_frames, font=("arial", 15), width=8, bd=5)
-bath_soap_entry.grid(row=0, column=1, padx=20)
+bath_soap_entry.grid(row=0, column=1, padx=20, pady=9)
 
 face_cream = Label(
     cosmetics_product_frames,
@@ -115,7 +115,7 @@ face_cream = Label(
 face_cream.grid(row=1, column=0)
 
 face_cream_entry = Entry(cosmetics_product_frames, font=("arial", 15), width=8, bd=5)
-face_cream_entry.grid(row=1, column=1)
+face_cream_entry.grid(row=1, column=1, pady=9)
 
 face_wash = Label(
     cosmetics_product_frames,
@@ -129,7 +129,7 @@ face_wash = Label(
 face_wash.grid(row=2, column=0)
 
 face_wash_entry = Entry(cosmetics_product_frames, font=("arial", 15), width=8, bd=5)
-face_wash_entry.grid(row=2, column=1)
+face_wash_entry.grid(row=2, column=1, pady=9)
 
 hair_spray = Label(
     cosmetics_product_frames,
@@ -143,7 +143,7 @@ hair_spray = Label(
 hair_spray.grid(row=3, column=0)
 
 hair_spray_entry = Entry(cosmetics_product_frames, font=("arial", 15), width=8, bd=5)
-hair_spray_entry.grid(row=3, column=1)
+hair_spray_entry.grid(row=3, column=1, pady=9)
 
 Hair_gel = Label(
     cosmetics_product_frames,
@@ -157,7 +157,7 @@ Hair_gel = Label(
 Hair_gel.grid(row=4, column=0)
 
 Hair_gel_entry = Entry(cosmetics_product_frames, font=("arial", 15), width=8, bd=5)
-Hair_gel_entry.grid(row=4, column=1)
+Hair_gel_entry.grid(row=4, column=1, pady=9)
 
 body_lotion = Label(
     cosmetics_product_frames,
@@ -171,7 +171,7 @@ body_lotion = Label(
 body_lotion.grid(row=5, column=0)
 
 body_lotion_entry = Entry(cosmetics_product_frames, font=("arial", 15), width=8, bd=5)
-body_lotion_entry.grid(row=5, column=1)
+body_lotion_entry.grid(row=5, column=1, pady=9)
 
 # grocery customer_details_frames
 
@@ -199,7 +199,7 @@ rice = Label(
 rice.grid(row=0, column=0)
 
 rice_entry = Entry(grocery_frames, font=("arial", 15), width=8, bd=5)
-rice_entry.grid(row=0, column=1, padx=20)
+rice_entry.grid(row=0, column=1, padx=20, pady=9)
 
 oil = Label(
     grocery_frames,
@@ -213,7 +213,7 @@ oil = Label(
 oil.grid(row=1, column=0)
 
 oil_entry = Entry(grocery_frames, font=("arial", 15), width=8, bd=5)
-oil_entry.grid(row=1, column=1)
+oil_entry.grid(row=1, column=1, pady=9)
 
 Daal = Label(
     grocery_frames,
@@ -227,7 +227,7 @@ Daal = Label(
 Daal.grid(row=2, column=0)
 
 Daal_entry = Entry(grocery_frames, font=("arial", 15), width=8, bd=5)
-Daal_entry.grid(row=2, column=1)
+Daal_entry.grid(row=2, column=1, pady=9)
 
 Wheat = Label(
     grocery_frames,
@@ -241,7 +241,7 @@ Wheat = Label(
 Wheat.grid(row=3, column=0)
 
 Wheat_entry = Entry(grocery_frames, font=("arial", 15), width=8, bd=5)
-Wheat_entry.grid(row=3, column=1)
+Wheat_entry.grid(row=3, column=1, pady=9)
 
 Sugar = Label(
     grocery_frames,
@@ -255,7 +255,7 @@ Sugar = Label(
 Sugar.grid(row=4, column=0)
 
 Sugar_entry = Entry(grocery_frames, font=("arial", 15), width=8, bd=5)
-Sugar_entry.grid(row=4, column=1)
+Sugar_entry.grid(row=4, column=1, pady=9)
 
 Tea = Label(
     grocery_frames,
@@ -269,7 +269,7 @@ Tea = Label(
 Tea.grid(row=5, column=0)
 
 Tea_entry = Entry(grocery_frames, font=("arial", 15), width=8, bd=5)
-Tea_entry.grid(row=5, column=1)
+Tea_entry.grid(row=5, column=1, pady=9)
 
 # Cold drinks frames
 
@@ -297,7 +297,7 @@ Mazza = Label(
 Mazza.grid(row=0, column=0)
 
 Mazza_entry = Entry(grocery_frames, font=("arial", 15), width=8, bd=5)
-Mazza_entry.grid(row=0, column=1, padx=20)
+Mazza_entry.grid(row=0, column=1, padx=20, pady=9)
 
 Pepsi = Label(
     grocery_frames,
@@ -311,7 +311,7 @@ Pepsi = Label(
 Pepsi.grid(row=1, column=0)
 
 Pepsi_entry = Entry(grocery_frames, font=("arial", 15), width=8, bd=5)
-Pepsi_entry.grid(row=1, column=1)
+Pepsi_entry.grid(row=1, column=1, pady=9)
 
 Sprite = Label(
     grocery_frames,
@@ -325,7 +325,7 @@ Sprite = Label(
 Sprite.grid(row=2, column=0)
 
 Sprite_entry = Entry(grocery_frames, font=("arial", 15), width=8, bd=5)
-Sprite_entry.grid(row=2, column=1)
+Sprite_entry.grid(row=2, column=1, pady=9)
 
 Dew = Label(
     grocery_frames,
@@ -339,7 +339,7 @@ Dew = Label(
 Dew.grid(row=3, column=0)
 
 Dew_entry = Entry(grocery_frames, font=("arial", 15), width=8, bd=5)
-Dew_entry.grid(row=3, column=1)
+Dew_entry.grid(row=3, column=1, pady=9)
 
 Frooti = Label(
     grocery_frames,
@@ -353,7 +353,7 @@ Frooti = Label(
 Frooti.grid(row=4, column=0)
 
 Frooti_entry = Entry(grocery_frames, font=("arial", 15), width=8, bd=5)
-Frooti_entry.grid(row=4, column=1)
+Frooti_entry.grid(row=4, column=1, pady=9)
 
 CocaCola = Label(
     grocery_frames,
@@ -367,7 +367,7 @@ CocaCola = Label(
 CocaCola.grid(row=5, column=0)
 
 CocaCola_entry = Entry(grocery_frames, font=("arial", 15), width=8, bd=5)
-CocaCola_entry.grid(row=5, column=1)
+CocaCola_entry.grid(row=5, column=1, pady=9)
 
 BillFrame = Frame(productFrame, bd=8, relief=GROOVE)
 BillFrame.grid(row=0, column=3)
@@ -380,7 +380,7 @@ Bill_label.pack(fill=X)
 scrollbar = Scrollbar(BillFrame, orient=VERTICAL)
 scrollbar.pack(side=RIGHT, fill=Y)
 
-textarea = Text(BillFrame, width=49, height=16, yscrollcommand=scrollbar.set)
+textarea = Text(BillFrame, width=49, height=19, yscrollcommand=scrollbar.set)
 textarea.pack()
 scrollbar.config(command=textarea.yview)
 
@@ -405,12 +405,12 @@ Cosmetic_Price = Label(
     fg="white",
     bg="gray20",
     pady=10,
-    padx=20,
+    padx=10,
 )
-Cosmetic_Price.grid(row=0, column=0)
+Cosmetic_Price.grid(row=0, column=0, sticky="w")
 
 Cosmetic_Price_entry = Entry(Bill_Menu_frames, font=("arial", 15), width=8, bd=5)
-Cosmetic_Price_entry.grid(row=0, column=1, padx=20)
+Cosmetic_Price_entry.grid(row=0, column=1, padx=10)
 
 Grocery_Price = Label(
     Bill_Menu_frames,
@@ -419,11 +419,12 @@ Grocery_Price = Label(
     fg="white",
     bg="gray20",
     pady=10,
+    padx=10,
 )
-Grocery_Price.grid(row=1, column=0)
+Grocery_Price.grid(row=1, column=0, sticky="w")
 
 Grocery_Price_entry = Entry(Bill_Menu_frames, font=("arial", 15), width=8, bd=5)
-Grocery_Price_entry.grid(row=1, column=1)
+Grocery_Price_entry.grid(row=1, column=1, padx=10)
 
 Cold_Drink_Price = Label(
     Bill_Menu_frames,
@@ -432,63 +433,121 @@ Cold_Drink_Price = Label(
     fg="white",
     bg="gray20",
     pady=10,
+    padx=10,
 )
-Cold_Drink_Price.grid(row=2, column=0)
+Cold_Drink_Price.grid(row=2, column=0, sticky="w")
 
 Cold_Drink_entry = Entry(Bill_Menu_frames, font=("arial", 15), width=8, bd=5)
-Cold_Drink_entry.grid(row=2, column=1)
+Cold_Drink_entry.grid(row=2, column=1, padx=10)
 
-Cold_Drink = Label(
+Cosmetic_Tax = Label(
     Bill_Menu_frames,
-    text="Grocery Price",
+    text="Cosmetic Tax",
     font=("times new roman", 14),
     fg="white",
     bg="gray20",
     pady=10,
+    padx=10,
 )
-Grocery_Price.grid(row=1, column=0)
+Cosmetic_Tax.grid(row=0, column=2, sticky="w")
 
-Grocery_Price_entry = Entry(Bill_Menu_frames, font=("arial", 15), width=8, bd=5)
-Grocery_Price_entry.grid(row=1, column=1)
+Cosmetic_Tax_entry = Entry(Bill_Menu_frames, font=("arial", 15), width=8, bd=5)
+Cosmetic_Tax_entry.grid(row=0, column=3, padx=10)
 
-Grocery_Price = Label(
+Grocery_Tax = Label(
     Bill_Menu_frames,
-    text="Grocery Price",
+    text="Grocery Tax",
     font=("times new roman", 14),
     fg="white",
     bg="gray20",
     pady=10,
+    padx=10,
 )
-Grocery_Price.grid(row=1, column=0)
+Grocery_Tax.grid(row=1, column=2, sticky="w")
 
-Grocery_Price_entry = Entry(Bill_Menu_frames, font=("arial", 15), width=8, bd=5)
-Grocery_Price_entry.grid(row=1, column=1)
+Grocery_Tax_entry = Entry(Bill_Menu_frames, font=("arial", 15), width=8, bd=5)
+Grocery_Tax_entry.grid(row=1, column=3, padx=10)
 
-Grocery_Price = Label(
+Cold_Drink_Tax = Label(
     Bill_Menu_frames,
-    text="Grocery Price",
+    text="Cold Drink Price",
     font=("times new roman", 14),
     fg="white",
     bg="gray20",
     pady=10,
+    padx=10,
 )
-Grocery_Price.grid(row=1, column=0)
+Cold_Drink_Tax.grid(row=2, column=2, sticky="w")
 
-Grocery_Price_entry = Entry(Bill_Menu_frames, font=("arial", 15), width=8, bd=5)
-Grocery_Price_entry.grid(row=1, column=1)
+Cold_Drink_Tax_entry = Entry(Bill_Menu_frames, font=("arial", 15), width=8, bd=5)
+Cold_Drink_Tax_entry.grid(row=2, column=3, padx=30)
 
-Grocery_Price = Label(
-    Bill_Menu_frames,
-    text="Grocery Price",
-    font=("times new roman", 14),
-    fg="white",
-    bg="gray20",
+Button_frame = Frame(Bill_Menu_frames, relief=GROOVE, bd=5)
+Button_frame.grid(
+    row=0,
+    column=4,
+    rowspan=3,
+    padx=15,
+)
+
+Total_button = Button(
+    Button_frame,
+    text="Total",
+    font=("times new roman", 13, "bold"),
+    bd=5,
+    width=8,
     pady=10,
-    padx=20,
+    bg="gray20",
+    fg="white",
 )
-Grocery_Price.grid(row=1, column=0)
+Total_button.grid(row=0, column=0, pady=29, padx=12)
 
-Grocery_Price_entry = Entry(Bill_Menu_frames, font=("arial", 15), width=8, bd=5)
-Grocery_Price_entry.grid(row=1, column=1)
+Bill_button = Button(
+    Button_frame,
+    text="Bill",
+    font=("times new roman", 13, "bold"),
+    bd=5,
+    width=8,
+    pady=10,
+    bg="gray20",
+    fg="white",
+)
+Bill_button.grid(row=0, column=1, pady=20, padx=12)
+
+Email_button = Button(
+    Button_frame,
+    text="Email",
+    font=("times new roman", 13, "bold"),
+    bd=5,
+    width=8,
+    pady=10,
+    bg="gray20",
+    fg="white",
+)
+Email_button.grid(row=0, column=2, pady=20, padx=12)
+
+Print_button = Button(
+    Button_frame,
+    text="Print",
+    font=("times new roman", 13, "bold"),
+    bd=5,
+    width=8,
+    pady=10,
+    bg="gray20",
+    fg="white",
+)
+Print_button.grid(row=0, column=3, pady=20, padx=12)
+
+Clear_button = Button(
+    Button_frame,
+    text="Clear",
+    font=("times new roman", 13, "bold"),
+    bd=5,
+    width=8,
+    pady=10,
+    bg="gray20",
+    fg="white",
+)
+Clear_button.grid(row=0, column=4, pady=20, padx=12)
 
 root.mainloop()
